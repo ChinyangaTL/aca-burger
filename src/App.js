@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <TopBread />
-      <Filling />
+      <Filling type="Tomato" />
+      <Filling type="Meat" />
+      <Filling type="Lettuce" />
       <BaseBread />
     </div>
   );

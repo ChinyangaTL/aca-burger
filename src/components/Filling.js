@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Filling = () => {
+const Filling = ({ type }) => {
   return (
     <div>
-      <h1>filling</h1>
+      <h1>{type}</h1>
     </div>
   );
 };
