@@ -12,9 +12,7 @@
   border-radius: 8px;
   margin: 0.5rem 0;
   color: #fff;
-  background-color: #4e1700;
   text-transform: capitalize;
-  /* background-color: red; */
 }
 
 .burger-piece.top-slice {
@@ -29,30 +27,4 @@
   border-bottom-right-radius: 40px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
