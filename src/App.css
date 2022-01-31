@@ -9,6 +9,7 @@
 
 .burger-piece {
   width: 400px;
+  height: 60px;
   border-radius: 8px;
   margin: 0.5rem 0;
   color: #fff;
