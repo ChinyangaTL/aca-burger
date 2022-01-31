@@ -6,13 +6,17 @@ import TopBread from './components/TopBread';
 function App() {
   return (
     <div className="App">
-      <TopBread />
-      <Filling type="Tomato" />
-      <Filling type="Meat" />
-      <Filling type="Lettuce" />
-      <BaseBread />
+      <TopBread styling={breadStyles} />
+      <Filling type="Tomato" backgroundColor="red" />
+      <Filling type="Meat" backgroundColor="#4e1700" />
+      <Filling type="Lettuce" backgroundColor="green" />
+      <BaseBread styling={breadStyles} />
     </div>
   );
 }
+
+const breadStyles = {
+  backgroundColor: 'rgb(238, 172, 40)',
+};
 
 export default App;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BaseBread = () => {
+const BaseBread = ({ styling }) => {
   return (
-    <div>
-      <h1>base bread</h1>
+    <div className="burger-piece bottom-slice" style={styling}>
+      <h3>base bread</h3>
     </div>
   );
 };

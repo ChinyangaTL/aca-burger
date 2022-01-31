@@ -7,9 +7,28 @@
   justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.burger-piece {
+  width: 400px;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  color: #fff;
+  background-color: #4e1700;
+  text-transform: capitalize;
+  /* background-color: red; */
+}
+
+.burger-piece.top-slice {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.burger-piece.bottom-slice {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

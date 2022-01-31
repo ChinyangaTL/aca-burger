@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Filling = ({ type }) => {
+const Filling = ({ type, backgroundColor }) => {
   return (
-    <div>
-      <h1>{type}</h1>
+    <div className="burger-piece" style={{ backgroundColor }}>
+      <h3>{type}</h3>
     </div>
   );
 };
