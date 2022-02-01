@@ -3,17 +3,24 @@ import Attribution from './components/Attribution';
 import BaseBread from './components/BaseBread';
 import Filling from './components/Filling';
 import TopBread from './components/TopBread';
+import { motion } from 'framer-motion';
 
 function App() {
   return (
-    <div className="App">
+    <motion.div
+      className="App"
+      initial={{ y: '-100vh' }}
+      animate={{ y: 0 }}
+      transition={{ type: 'spring', stiffness: 120 }}
+    >
       <TopBread styling={breadStyles} />
       <Filling type="Tomato" backgroundColor="red" />
       <Filling type="Meat" backgroundColor="#4e1700" />
       <Filling type="Lettuce" backgroundColor="green" />
       <BaseBread styling={breadStyles} />
+      {!(<Filling />) && 1}
       <Attribution />
-    </div>
+    </motion.div>
   );
 }
 

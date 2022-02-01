@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Filling = ({ type, backgroundColor }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -6,8 +7,10 @@ const Filling = ({ type, backgroundColor }) => {
     setIsVisible(false);
   };
   return (
-    <div
-      data-i
+    <motion.div
+      whileHover={{
+        scale: 0.9,
+      }}
       onClick={makeVanish}
       className="burger-piece"
       style={{
@@ -16,7 +19,7 @@ const Filling = ({ type, backgroundColor }) => {
       }}
     >
       <h3>{type}</h3>
-    </div>
+    </motion.div>
   );
 };
 
