@@ -7,18 +7,12 @@ import { motion } from 'framer-motion';
 
 function App() {
   return (
-    <motion.div
-      className="App"
-      initial={{ y: '-100vh' }}
-      animate={{ y: 0 }}
-      transition={{ type: 'spring', stiffness: 120 }}
-    >
+    <motion.div className="App">
       <TopBread styling={breadStyles} />
       <Filling type="Tomato" backgroundColor="red" />
       <Filling type="Meat" backgroundColor="#4e1700" />
       <Filling type="Lettuce" backgroundColor="green" />
       <BaseBread styling={breadStyles} />
-      {!(<Filling />) && 1}
       <Attribution />
     </motion.div>
   );
