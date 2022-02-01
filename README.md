@@ -10,6 +10,7 @@ This is the solution to the ACA Burger Challenge.
   - Using CSS in JS
   - Building Components
 - Deploy and host the site on Netlify using continious deployment  
+- *BONUS* make a filling disappear when clicked on
   
 ### Links
 - Solution URL: [GitHub](https://github.com/ChinyangaTL/aca-burger)
@@ -19,6 +20,3 @@ This is the solution to the ACA Burger Challenge.
 - Semantic HTML5 markup
 - Flexbox
 - [React](https://reactjs.org/) - JS library
-
-### Continued Development
-Will add disappear on click feature after I take care of the kids.
