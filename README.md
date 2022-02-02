@@ -24,6 +24,7 @@ This is the solution to the ACA Burger Challenge.
 - Semantic HTML5 markup
 - Flexbox
 - [React](https://reactjs.org/) - JS library
+- [Framer](https://www.framer.com/motion/) For animations
 
 ### Future Editions
 
