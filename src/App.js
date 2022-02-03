@@ -19,16 +19,28 @@ const FillingPicker = () => {
 
 function App() {
   const [filling, setFilling] = useState(initialFilling);
+
   useEffect(() => {
     console.log(filling);
-  });
+  }, [filling]);
+
+  const removeLayer = (id) => {
+    setFilling(filling.filter((layer) => layer.id !== id));
+  };
+
   return (
     <motion.div className="App">
       <TopBread styling={breadStyles} />
       {filling.map((layer) => {
         const { id, type, backgroundColor } = layer;
         return (
-          <Filling key={id} type={type} backgroundColor={backgroundColor} />
+          <Filling
+            key={id}
+            id={id}
+            type={type}
+            backgroundColor={backgroundColor}
+            removeLayer={removeLayer}
+          />
         );
       })}
       <BaseBread styling={breadStyles} />

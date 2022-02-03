@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const Filling = ({ type, backgroundColor }) => {
+const Filling = ({ id, type, backgroundColor, removeLayer }) => {
   const [isVisible, setIsVisible] = useState(true);
   const makeVanish = () => {
     setIsVisible(false);
@@ -14,11 +14,10 @@ const Filling = ({ type, backgroundColor }) => {
       whileHover={{
         scale: 0.9,
       }}
-      onClick={makeVanish}
+      onClick={() => removeLayer(id)}
       className="burger-piece"
       style={{
         backgroundColor: `${backgroundColor}`,
-        display: `${isVisible ? '' : 'none'}`,
       }}
     >
       <h3>{type}</h3>
