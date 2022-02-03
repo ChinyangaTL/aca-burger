@@ -27,21 +27,24 @@ function App() {
 
   return (
     <motion.div className="App">
-      <TopBread styling={breadStyles} />
-      {filling.map((layer) => {
-        const { id, type, backgroundColor } = layer;
-        return (
-          <Filling
-            key={id}
-            id={id}
-            type={type}
-            backgroundColor={backgroundColor}
-            removeLayer={removeLayer}
-          />
-        );
-      })}
-      <BaseBread styling={breadStyles} />
-      <Attribution />
+      <div>
+        <p>Click on layer to remove it</p>
+        <TopBread styling={breadStyles} />
+        {filling.map((layer) => {
+          const { id, type, backgroundColor } = layer;
+          return (
+            <Filling
+              key={id}
+              id={id}
+              type={type}
+              backgroundColor={backgroundColor}
+              removeLayer={removeLayer}
+            />
+          );
+        })}
+        <BaseBread styling={breadStyles} />
+        <Attribution />
+      </div>
       <FillingPicker filling={filling} setFilling={setFilling} />
     </motion.div>
   );

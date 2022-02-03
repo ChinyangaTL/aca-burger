@@ -26,9 +26,10 @@ const FillingPicker = ({ filling, setFilling }) => {
 
   return (
     <>
-      <p>Note: Layer will be added to the top</p>
-      <div>
+      <div className="fillingBtnContainer">
+        <p>Note: Layer will be added to the top</p>
         <button
+          className="fillingBtn"
           type="button"
           value="tomato"
           onClick={(e) => addLayer(e.target.value)}
@@ -36,6 +37,7 @@ const FillingPicker = ({ filling, setFilling }) => {
           Add Tomato
         </button>
         <button
+          className="fillingBtn"
           type="button"
           value="lettuce"
           onClick={(e) => addLayer(e.target.value)}
@@ -43,6 +45,7 @@ const FillingPicker = ({ filling, setFilling }) => {
           Add Lettuce
         </button>
         <button
+          className="fillingBtn"
           type="button"
           value="cheese"
           onClick={(e) => addLayer(e.target.value)}
@@ -50,6 +53,7 @@ const FillingPicker = ({ filling, setFilling }) => {
           Add Cheese
         </button>
         <button
+          className="fillingBtn"
           type="button"
           value="meat"
           onClick={(e) => addLayer(e.target.value)}
